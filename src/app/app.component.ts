@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Counter exercise!';
+  public componentCounterValue;
+
+  showCounter(data) {
+    this.componentCounterValue = data;
+    console.log('showCounter: ' + data);
+  }
 }
